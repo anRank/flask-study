@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home1.css') }}">
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<br>
+<div class="head">
+    <img src="/static/pic1.jpg" alt="Me" width="66px" border="2" hspace="4">
+    <!--  获取传入的用户名  -->
+    <span class="head1">{{ name }}</span>
+</div>
+<ul>
+  <li><a href="{{ url_for('homepage1')}}">主页</a></li>
+  <li><a href="{{ url_for('information') }}">资料</a></li>
+  <li><a href="{{ url_for('homepage')   }}">Old home</a></li>
+  <li><div class="container"><a href="#demo" data-toggle="collapse">关于</a>
+            <div id="demo" class="collapse"><p class="text-info">I am trying to set up a blog of mine.This is the construction site.
+        I am learning Python and Flask to build a network framework.Keep learning everyday!</p></div>
+      </div>
+  </li>
+  <li><a href="{{ url_for('index1') }}">留言</a></li>
+  <span>
+    <li><a class ="login" href="login">登录</a></li>
+    <li><a class ="register" href="register">注册</a></li>
+  </span>
+</ul>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col" style="background-color:lavender;"><img src="/static/transistor2.jpg" width="391" alt="Me"></div>
+    <div class="col" style="background-color:lavender;"><a href="https://baike.baidu.com/item/%E6%99%B6%E4%BD%93%E7%AE%A1/13976932"><img src="/static/transistor3.jpg" width="391" alt="Me"></a></div>
+    <div class="col" style="background-color:lavender;"><img src="/static/transistor4.jpg" width="391"></div>
+  </div>
+</div>
+
+</br>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
+    <div class="container">
+       <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary">Recommended</button>
+            <a href="http://c.biancheng.net/cpp/"><button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;c.biancheng.net&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+            <a href="https://www.runoob.com/"><button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;www.runoob.com&nbsp;&nbsp;</button></a>
+            <a href="https://www.icourse163.org/"><button type="button" class="btn btn-primary">&nbsp;www.icourse163.org</button></a>
+            <a href="https://www.csdn.net/"><button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;www.csdn.net&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+            <a href="https://www.imooc.com/"><button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;www.imooc.com&nbsp;&nbsp;&nbsp;</button></a>
+            <a href="https://leetcode-cn.com/"><button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leetcode.com&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+            <a href="https://www.shiyanlou.com/"><button type="button" class="btn btn-primary">&nbsp;&nbsp;www.shiyanlou.com</button></a>
+        </div>
+    </div>
+    </br>
+
+    </div>
+    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10" style="background-color:#FFFFDD;">
+        </br>
+        <h5>Recommended : 《星之海洋》</h5>
+        <h6>关于这本小说：</h6>
+        <p>这本书最大的看点之一，便是黄而与他身边女人们的爱恨情仇。如果代入现代的情感判断标准的话，黄而是个不折不扣的“渣男”。但如果只是揪住
+            这一点不放，而错失这本小说的话，未免得不偿失了。这本小说讲了一件件错上加错的事情......
+        <p>罗盈，她只是黄而生命中遇到一个过客，但她却影响了黄而17岁之后一生的走向，黄而掩埋了自己恶的个性，选择做一个被社会 “认可”的好人。</p>
+        <p>寒寒，是黄而正确的地点错误的时间遇到错误的人。一直到结尾，两人都是最好的朋友，但也或许是年少无知，寒寒错把友情当爱情，大黄也由于不想伤害身边任何一个人，而不断做出错误的决定。</p>
+        <p>渚烟，大黄把她当成妹妹一样照顾，渚烟却把大黄当成牢笼中的光明，，本应互相拯救的两人，却折磨着对方。</p>
+        <p>赵影，或许是黄而在正确的时间，正确的地点，遇到的正确的人。两人本应白头偕老，黄而被流放三星，赵影无法确定自己的性取向，当两人解开心结的时候，却已经要面对生死的选择了...种族生存与至爱之人，该如何选择...</p>
+        <p>五月/静唯，她出现的篇幅，远不如赵影与陈琪，或者说，她总是出现在大黄的记忆中、对话中。五月或许象征着人心中的最终追求，为了实现你毕生的梦想，你愿意付出多少代价？</p>
+        <p>陈琪，本书的第一女主角，本是和大黄擦肩而过的人。但出于机缘巧合（由于两人心理都比较变态...），两人却分分合合度过了数十年的时光，其实直到陈琪去世，我才明白大黄是爱陈琪的，但这份爱的阻力，实在是太大了。</p>
+        <p>......</p>
+        <p>这本书将两个经典的人性问题融入其中（我认为的）：岔道困境，最大的麦穗。一本优秀的小说，并不只是在讲故事，更是在谈人性。</p>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

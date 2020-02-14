@@ -1,0 +1,7 @@
+h1 { text-align:center;}
+p.date { text-align:right; }
+p.introduction { color:grey; }
+span.head1 {font-size:30px; margin:10px; line-height:70px;}
+img { float:left;}
+div.head { border-style:solid; border-left-width:7px; border-left-color:#81f5ff;
+                background-color:#A0FFE6; white-space:nowrap; height:70px;width:1256px;}

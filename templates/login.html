@@ -1,0 +1,18 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<div align="center">
+    <form action="/login" method="post" >
+        {{ form.csrf_token }}
+        {{ form.username.label }}<br>{{ form.username }}<br>
+        {{ form.password.label }}<br>{{ form.password }}<br>
+        {{ form.remember }} {{ form.remember.label }}<br>
+        {{ form.submit }}<br>
+    </form>
+</div>
+<div style="line-height:60px;" align="center">
+    <span><a href="{{ url_for('homepage1') }}"><button >Back</button></a></span>
+</div>
+</html>

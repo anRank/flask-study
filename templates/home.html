@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>homepage</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+
+
+</head>
+<body>
+    <h1>Hello, here is anRan's homepage.</h1>
+    <p class="date">2020 年 2 月 10 日</p>
+    <hr>
+    <p class="introduction">I am trying to set up a blog of mine.This is the construction site.
+        I am learning Python and Flask to build a network framework. I really don't like front-end work. But I still can
+        not use the template smartly, not to mention Bootstrap. Keep learning everyday!_______1.0 homepage^_^_______
+    </p>
+    <hr>
+
+    <div class="head">
+        <img src="/static/pic1.jpg" alt="Me" width="66px" border="2" hspace="4">
+        <span class="head1">anRan</span>
+
+    </div>
+
+    <div style="line-height:60px;">
+        <a href="{{ url_for('information')}}">Information</a>
+    </div>
+
+    <div style="line-height:60px;">
+        <a href="{{ url_for('register')}}">Register</a>
+    </div>
+
+    <div style="line-height:60px;">
+        <a href="{{ url_for('login')}}">Login</a>
+    </div>
+
+    <div style="line-height:60px;">
+        <a href="{{ url_for('homepage1')}}">New home</a>
+    </div>
+</body>
+</html>
